@@ -6,6 +6,11 @@ export interface StyleClosetTheme {
 const colors = {
   primary: '#1b1a20',
   secondary: '#eabf00',
+  white: '#ffffff',
+  surface: '#f7f7f5',
+  border: '#dedede',
+  muted: '#777777',
+  soft: '#aaaaaa',
 };
 
 const breakpoints = {
