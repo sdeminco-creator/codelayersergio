@@ -213,6 +213,14 @@ export const LightButton = styled(PrimaryButton)`
   background: ${({ theme }) => theme.colors.white};
 `;
 
+export const HeroCta = styled(LightButton)`
+  border-width: 0.556px;
+  color: ${({ theme }) => theme.colors.primary};
+  background: #3c72e7;
+  line-height: normal;
+  opacity: 0.86;
+`;
+
 export const Benefits = styled.div`
   display: flex;
   min-height: 80px;

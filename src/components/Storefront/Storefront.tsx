@@ -206,9 +206,9 @@ const HomePage = ({
           Fresh graphics. Easy fits. A little more you. Meet your next everyday
           favourites.
         </S.HeroText>
-        <S.LightButton onClick={() => onNavigate('listing')}>
+        <S.HeroCta onClick={() => onNavigate('listing')}>
           Shop new arrivals
-        </S.LightButton>
+        </S.HeroCta>
       </S.HeroCopy>
     </S.Hero>
     <S.Benefits>
