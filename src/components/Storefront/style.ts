@@ -215,7 +215,7 @@ export const LightButton = styled(PrimaryButton)`
 
 export const HeroCta = styled(LightButton)`
   border-width: 0.556px;
-  background: #3c72e7;
+  background: #cfd6e6;
   line-height: normal;
   opacity: 0.86;
 `;
