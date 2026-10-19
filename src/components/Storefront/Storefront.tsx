@@ -233,7 +233,7 @@ const HomePage = ({
         {[
           ['/assets/abcd4.png', 'Graphic tees', 'A little statement goes a long way.'],
           ['/assets/81cd0.png', 'Cropped & oversized', 'Less ordinary. More you.'],
-          ['/assets/8aaff.png', 'Sweatshirts', 'The off-duty essentials.'],
+          ['/assets/91bb2.png', 'Sweatshirts', 'The off-duty essentials.'],
         ].map(([image, title, copy]) => (
           <S.CategoryCard key={title} onClick={() => onNavigate('listing')}>
             <img alt={title} src={image} />
