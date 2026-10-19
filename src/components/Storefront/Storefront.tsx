@@ -206,9 +206,9 @@ const HomePage = ({
           Fresh graphics. Easy fits. A little more you. Meet your next everyday
           favourites.
         </S.HeroText>
-        <S.LightButton onClick={() => onNavigate('listing')}>
+        <S.HeroCta onClick={() => onNavigate('listing')}>
           Shop new arrivals
-        </S.LightButton>
+        </S.HeroCta>
       </S.HeroCopy>
     </S.Hero>
     <S.Benefits>
@@ -229,7 +229,7 @@ const HomePage = ({
       </S.SectionHead>
       <S.CategoryGrid>
         {[
-          ['/assets/fa223.png', 'Graphic tees', 'A little statement goes a long way.'],
+          ['/assets/abcd4.png', 'Graphic tees', 'A little statement goes a long way.'],
           ['/assets/81cd0.png', 'Cropped & oversized', 'Less ordinary. More you.'],
           ['/assets/8aaff.png', 'Sweatshirts', 'The off-duty essentials.'],
         ].map(([image, title, copy]) => (
