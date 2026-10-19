@@ -229,7 +229,7 @@ const HomePage = ({
       </S.SectionHead>
       <S.CategoryGrid>
         {[
-          ['/assets/fa223.png', 'Graphic tees', 'A little statement goes a long way.'],
+          ['/assets/abcd4.png', 'Graphic tees', 'A little statement goes a long way.'],
           ['/assets/81cd0.png', 'Cropped & oversized', 'Less ordinary. More you.'],
           ['/assets/8aaff.png', 'Sweatshirts', 'The off-duty essentials.'],
         ].map(([image, title, copy]) => (
