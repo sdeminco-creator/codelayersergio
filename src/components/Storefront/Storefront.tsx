@@ -148,10 +148,12 @@ const ProductCard = ({
   product,
   onProduct,
   onAdd,
+  mediaImage,
 }: {
   product: StoreProduct;
   onProduct(product: StoreProduct): void;
   onAdd(product: StoreProduct): void;
+  mediaImage?: string;
 }) => {
   const dollars = Math.floor(product.price);
   const cents = product.price.toFixed(2).slice(-2);
@@ -162,7 +164,7 @@ const ProductCard = ({
         aria-label={`View ${product.title}`}
         onClick={() => onProduct(product)}
       >
-        <img alt={product.title} src={product.image} />
+        <img alt={product.title} src={mediaImage || product.image} />
         {product.freeShipping && <S.ShippingBadge>Free shipping</S.ShippingBadge>}
       </S.ProductMedia>
       <S.ProductName onClick={() => onProduct(product)}>
@@ -263,9 +265,10 @@ const HomePage = ({
           <img alt="" src="/assets/3e11a.svg" />
         </S.InlineAction>
       </S.ShowcaseIntro>
-      {storeProducts.slice(0, 2).map((product) => (
+      {storeProducts.slice(0, 2).map((product, index) => (
         <ProductCard
           key={product.sourceId}
+          mediaImage={index === 0 ? '/assets/b4f13.png' : undefined}
           onAdd={onAdd}
           onProduct={onProduct}
           product={product}
